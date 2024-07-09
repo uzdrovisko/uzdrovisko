@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="ICON_mail" data-name="ICON mail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #009eb0;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_306" data-name="Group 306">
+    <path id="Path_100" data-name="Path 100" class="cls-1" d="m22,7.53v9.47c0,1.59-1.24,2.91-2.82,3H5c-1.59,0-2.9-1.24-2.99-2.82v-.18s0-9.47,0-9.47l9.44,6.3.12.07c.28.14.6.14.88,0l.12-.07,9.44-6.3Z"/>
+    <path id="Path_101" data-name="Path 101" class="cls-1" d="m19,4c1.04,0,2.01.54,2.56,1.43l-9.56,6.37L2.44,5.43c.51-.83,1.39-1.36,2.36-1.42h.2s14,0,14,0Z"/>
+  </g>
+  <rect id="Rectangle_85" data-name="Rectangle 85" class="cls-2" width="24" height="24"/>
+</svg>

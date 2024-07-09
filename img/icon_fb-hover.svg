@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="ICON_fb" data-name="ICON fb" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #009eb0;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <rect id="Rectangle_83" data-name="Rectangle 83" class="cls-2" width="24" height="24"/>
+  <path id="mdi_facebook" data-name="mdi facebook" class="cls-1" d="m12,2c-5.54.01-10.01,4.51-10,10.05.01,4.91,3.59,9.1,8.44,9.87v-7h-2.54v-2.9h2.54v-2.21c-.21-1.94,1.2-3.67,3.13-3.88.22-.02.43-.03.65,0,.75.01,1.49.07,2.23.19v2.47h-1.26c-.79-.1-1.52.45-1.62,1.24-.01.1-.02.21,0,.32v1.88h2.78l-.45,2.9h-2.33v7c5.47-.87,9.19-6.02,8.31-11.48-.78-4.85-4.96-8.43-9.87-8.44Z"/>
+</svg>
