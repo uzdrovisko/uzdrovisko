@@ -20,18 +20,32 @@
 <link rel="stylesheet" href="css/swiper-bundle.min.css" defer>
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/metody-terapii.css">
-        
+<link rel="stylesheet" href="css/cookieconsent.css" type="text/css">
 <!-- Google Tag Manager -->
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    
+    gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied',
+        'analytics_storage': 'denied',
+        'personalization_storage': 'denied',
+        'security_storage': 'denied',
+        'functionality_storage': 'denied',
+        'wait_for_update': '2000'
+    });
+    </script>
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-WPP9LPN3');</script>
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WPP9LPN3');</script>    
 <!-- End Google Tag Manager -->
     </head>
     <body>
-        
-        <!-- Google Tag Manager (noscript) -->
+       <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPP9LPN3"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
@@ -347,7 +361,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <div class="registration footer-contact">
                             <p class="footer-m">Rejestracja:</p>
                             <br>
-                            <button type="button" class="reserve-button-t" onclick="window.location.href = 'kontakt.html'">Pełen kontakt</button>
+                            <button type="button" class="reserve-button-t">Pełen kontakt</button>
                             <!-- <a class="footer-details" href="tel:+48881718918">+48 881 718 918</a>
                             <a class="footer-details" href="mailto:kontakt@uzdroviskopoznan.pl">kontakt@uzdroviskopoznan.pl</a> -->
                         </div>
@@ -415,4 +429,5 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </script>
            <script src="js/swiper-bundle.min.js"></script>
            <script src="js/metody-terapii.js"></script>
+           <script type="module" src="js/cookieconsent.js"></script>
 </html>
