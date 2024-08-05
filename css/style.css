@@ -279,6 +279,7 @@ body.open .navbar-menu {
     background: #000;
     visibility: hidden;
     transition: all 0.3s;
+
   }
   
   body.open .navbar-menu {
@@ -1756,4 +1757,117 @@ body.open .navbar-menu1 {
 .ig-icon-w:hover {
   content: url('../img/icon_insta-hover.svg');
   height: 24px;
+}
+
+
+
+.dropdown {
+  position: relative;
+  list-style: none;
+  
+}
+
+.dropdown-content {
+  position: absolute;
+  
+  background-color: #f9f9f9;
+  min-width: 400px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  left: 0;
+  top: 30px;
+  padding: 20px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 24px;
+}
+
+.dropdown-content.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.dropdown-content-inner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  white-space: normal;
+  transition: all 0.5s ease-in-out;
+  border-radius: 12px;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(252, 246, 240);
+}
+
+.go-back-button {
+  display: none;
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(252, 246, 240);
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .dropdown:hover .dropdown-content {
+      opacity: 1;
+      pointer-events: auto;
+  }
+}
+
+@media only screen and (max-width: 1383px) {
+  .dropdown-content-inner {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .dropdown-content {
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      min-width: auto;
+      width: auto;
+      transform: none;
+      box-shadow: none;
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 0;
+      overflow-y: auto;
+  }
+
+  .dropdown-content a {
+      padding: 8px 8px;
+      width: calc(100% - 16px);
+      border-radius: 8px;
+  }
+
+  .go-back-button {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 10px;
+
+  }
+
+  .dropdown-content:not(.active) {
+      display: none;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
