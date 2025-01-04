@@ -11,7 +11,7 @@ h4 {
 }
 .section0 {
     height: 311px;
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%), url('../img/uzdrovisko9.webp');
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%), url('../img/uzdrovisko1.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -57,13 +57,13 @@ h4 {
     flex-wrap: wrap;
     justify-content: center;
     gap: 32px;
-    color: #022B2F;
+    color: black;
 }
 .list {
 
     width: 498px;
     height: 100%;
-    background-color: #FCF6F0;
+    background-color: #FFFFFF;
     border-radius: 12px;
     padding: 32px;
 }

@@ -315,16 +315,14 @@ function lastSingleLetterToNewLine(el){
     function scrollToSectionById(sectionId) {
       const section = document.getElementById(sectionId);
       if (section) {
-        section.scrollIntoView({ behavior: 'smooth' });
+        const offset = sectionId === 'recommendations' ? -82 : 0;
+    
+        const offsetTop = section.getBoundingClientRect().top + window.scrollY + offset;
+    
+        window.scrollTo({ top: offsetTop, behavior: 'smooth' });
       }
     }
     
-    function scrollToSection(event, sectionId) {
-      event.preventDefault();
-    
-      const section = document.getElementById(sectionId);
-      section.scrollIntoView({ behavior: 'smooth' });
-    }
             
 
 
