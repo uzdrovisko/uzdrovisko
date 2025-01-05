@@ -251,49 +251,68 @@ var swiper = new Swiper(".slide-content", {
 });
 
 
-// Rozwijane boxy //
-var currentBox = null;
+function toggleBox(index) {
+  // Pobierz kontener z przyciskiem i boxem
+  const containers = document.querySelectorAll('.custom-button-container');
+  const currentContainer = containers[index - 1];
+  const box = document.getElementById(`box${index}`);
+  const buttonArrow = currentContainer.querySelector('.custom-button-arrow');
+  const button = currentContainer.querySelector('.custom-button'); // Pobierz przycisk
 
-function toggleBox(boxIndex) {
-  var box = document.getElementById('box' + boxIndex);
-  var button = document.getElementsByClassName('custom-button')[boxIndex - 1];
-  var arrow = button.querySelector('.custom-button-arrow');
+  // Sprawdź, czy kontener jest aktualnie rozwinięty
+  const isExpanded = currentContainer.classList.contains('expanded');
 
-  if (box.classList.contains('expanded')) {
-    // Zamykanie boxa
-    box.style.maxHeight = '0';
-    button.classList.remove('custom-button-expanded');
-    arrow.style.transform = 'rotate(0deg)';
-    box.classList.remove('expanded');
+  // Zwiń wszystkie pozostałe boxy i usuń obramowanie
+  containers.forEach((container, idx) => {
+      const otherBox = document.getElementById(`box${idx + 1}`);
+      const otherArrow = container.querySelector('.custom-button-arrow');
+      const otherButton = container.querySelector('.custom-button'); // Pobierz przycisk
 
-    // Przywróć zaokrąglenie dolne przycisku
-    button.style.borderBottomLeftRadius = '12px';
-    button.style.borderBottomRightRadius = '12px';
-  } else {
-    // Zamykanie otwartego boxa, jeśli istnieje
-    if (currentBox !== null && currentBox !== box) {
-      currentBox.style.maxHeight = '0';
-      currentBox.previousElementSibling.classList.remove('custom-button-expanded');
-      currentBox.previousElementSibling.querySelector('.custom-button-arrow').style.transform = 'rotate(0deg)';
-      currentBox.classList.remove('expanded');
+      // Ukryj box i strzałkę
+      container.classList.remove('expanded');
+      otherArrow.style.transform = "rotate(0deg)";
+      if (otherBox) {
+          otherBox.style.maxHeight = "0";
+      }
 
-      // Przywróć zaokrąglenie dolne poprzedniemu przyciskowi
-      currentBox.previousElementSibling.style.borderBottomLeftRadius = '12px';
-      currentBox.previousElementSibling.style.borderBottomRightRadius = '12px';
-    }
+      // Usuń obramowanie z innych kontenerów
+      container.style.border = "none";
+      container.style.borderRadius = "0"; // Usuń zaokrąglenie z innych kontenerów
 
-    // Otwieranie aktualnego boxa
-    box.style.maxHeight = box.scrollHeight + 'px';
-    button.classList.add('custom-button-expanded');
-    arrow.style.transform = 'rotate(180deg)';
-    box.classList.add('expanded');
-    currentBox = box;
+      // Przywróć obramowanie do przycisku w innych kontenerach
+      if (otherButton) {
+          otherButton.style.border = "2px solid #005C65"; // Dostosuj styl obramowania przycisku
+      }
+  });
 
-    // Ukryj zaokrąglenie dolne przycisku
-    button.style.borderBottomLeftRadius = '0';
-    button.style.borderBottomRightRadius = '0';
+  if (!isExpanded) {
+      // Rozwiń kliknięty box
+      currentContainer.classList.add('expanded');
+      buttonArrow.style.transform = "rotate(180deg)";
+      box.style.maxHeight = `${box.scrollHeight}px`;
+
+      // Dodaj obramowanie z radius tylko do wybranego kontenera
+      currentContainer.style.border = "2px solid #005C65"; // Kolor obramowania
+      currentContainer.style.borderRadius = "12px"; // Zaokrąglone rogi
+
+      // Usuń obramowanie z przycisku w rozwiniętym kontenerze
+      if (button) {
+          button.style.border = "none"; // Usuwamy obramowanie z przycisku
+      }
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // Przerzucanie ogonków do nowej linijki //
@@ -322,8 +341,7 @@ function lastSingleLetterToNewLine(el){
         window.scrollTo({ top: offsetTop, behavior: 'smooth' });
       }
     }
-    
-            
+  
 
 
 

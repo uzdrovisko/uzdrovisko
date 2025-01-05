@@ -6,10 +6,10 @@
 }
 .section0 {
     height: 311px;
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%), url('../img/uzdrovisko9.webp');
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%), url('../img/uzdrovisko1.webp');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: 50% 40%;
     position: relative;
     z-index: 998;
 }

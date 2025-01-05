@@ -13,14 +13,12 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Allison&family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" defer>
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="msapplication-TileImage" content="/mstile-144x144.png">
-<meta name="theme-color" content="#ffffff">
+        <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="Uzdrovisko" />
+        <link rel="manifest" href="/site.webmanifest" />
         <link rel="stylesheet" href="css/swiper-bundle.min.css" defer>
         <link rel="stylesheet" href="css/style.css?v=3">
         <link rel="preload" as="image" href="img/uzdrovisko9.webp" />
@@ -113,7 +111,7 @@
                         <span class="material-icons">menu</span>
                     </button>
                     <a href="index.html">
-                        <img src="img/logo4.svg" class="logo">
+                        <img src="img/logo1.svg" class="logo">
                     </a>
                     <nav class="navbar-menu">
                         <button type="button" class="activem" onclick="window.location.href = 'pierwsza-wizyta.html'">Pierwsza wizyta</button>
@@ -207,7 +205,7 @@
                 </nav>
             </div>
         </section>
-
+        <!-- Nagłówek -->
 
         
         <section class="section1">
@@ -220,8 +218,7 @@
                 <img src="img/uzdrovisko19.webp">
             </div>
         </section>
-
-
+        <!-- Nasza misja -->
 
         <section class="section2">
             <div class="container2">
@@ -232,8 +229,7 @@
                 </div>
             </div>
         </section>
-        
-
+        <!-- Cytat -->
 
 
         <section class="section3">
@@ -241,7 +237,7 @@
                 <h2>Przykłady chorób i dysfunkcji, z którymi możemy Ci pomóc:</h2>
             </div>
             <div class="custom-container">
-                    <div class="custom-button-container">
+                <div id="button1" class="custom-button-container">
                         <div class="custom-button" onclick="toggleBox(1)">
                             <h5 class="custom-button-text">Układu pokarmowego</h5>
                             <img class="custom-button-arrow" src="img/icon_arrow-down.svg" alt="Strzałka" width="20" height="20">
@@ -264,9 +260,8 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
-    
-                    <div class="custom-button-container">
+                </div>
+                <div id="button2" class="custom-button-container">
                         <div class="custom-button" onclick="toggleBox(2)">
                             <h5 class="custom-button-text">Ginekologiczne</h5>
                             <img class="custom-button-arrow" src="img/icon_arrow-down.svg" alt="Strzałka" width="20" height="20">
@@ -290,9 +285,8 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
-    
-                    <div class="custom-button-container">
+                </div>    
+                <div id="button3" class="custom-button-container">
                         <div class="custom-button" onclick="toggleBox(3)">
                             <h5 class="custom-button-text">Naczyniowe i układu <br>krwionośnego</h5>
                             <img class="custom-button-arrow" src="img/icon_arrow-down.svg" alt="Strzałka" width="20" height="20">
@@ -314,9 +308,8 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
-    
-                    <div class="custom-button-container">
+                </div>    
+                <div id="button4" class="custom-button-container">
                         <div class="custom-button" onclick="toggleBox(4)">
                             <h5 class="custom-button-text">Narządu ruchu</h5>
                             <img class="custom-button-arrow" src="img/icon_arrow-down.svg" alt="Strzałka" width="20" height="20">
@@ -334,9 +327,8 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
-    
-                    <div class="custom-button-container">
+                </div> 
+                <div id="button5" class="custom-button-container">
                         <div class="custom-button" onclick="toggleBox(5)">
                             <h5 class="custom-button-text">Neurologiczne</h5>
                             <img class="custom-button-arrow" src="img/icon_arrow-down.svg" alt="Strzałka" width="20" height="20">
@@ -357,9 +349,8 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
-    
-                    <div class="custom-button-container">
+                </div>
+                <div id="button6" class="custom-button-container">
                         <div class="custom-button" onclick="toggleBox(6)">
                             <h5 class="custom-button-text">Dermatologiczne i kosmetologiczne</h5>
                             <img class="custom-button-arrow" src="img/icon_arrow-down.svg" alt="Strzałka" width="20" height="20">
@@ -382,9 +373,8 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
-    
-                    <div class="custom-button-container">
+                </div>
+                <div id="button7" class="custom-button-container">
                         <div class="custom-button" onclick="toggleBox(7)">
                         <h5 class="custom-button-text">Układu oddechowego</h5>
                         <img class="custom-button-arrow" src="img/icon_arrow-down.svg" alt="Strzałka" width="20" height="20">
@@ -403,9 +393,8 @@
                             </ul>
                         </div>
                         </div>
-                    </div>
-    
-                    <div class="custom-button-container">
+                </div>
+                <div id="button8" class="custom-button-container">
                         <div class="custom-button" onclick="toggleBox(8)">
                         <h5 class="custom-button-text">Stomatologiczne</h5>
                         <img class="custom-button-arrow" src="img/icon_arrow-down.svg" alt="Strzałka" width="20" height="20">
@@ -422,8 +411,7 @@
                         </div>
                         </div>
                 </div>
-                
-                <div class="custom-button-container">
+                <div id="button9" class="custom-button-container">
                         <div class="custom-button" onclick="toggleBox(9)">
                         <h5 class="custom-button-text">Reumatologiczne</h5>
                         <img class="custom-button-arrow" src="img/icon_arrow-down.svg" alt="Strzałka" width="20" height="20">
@@ -441,8 +429,7 @@
                         </div>
                         </div>
                 </div>
-                
-                <div class="custom-button-container">
+                <div id="button10" class="custom-button-container">
                         <div class="custom-button" onclick="toggleBox(10)">
                         <h5 class="custom-button-text">Otolaryngologiczne</h5>
                         <img class="custom-button-arrow" src="img/icon_arrow-down.svg" alt="Strzałka" width="20" height="20">
@@ -460,9 +447,8 @@
                             </ul>
                         </div>
                         </div>
-                </div>
-                
-                <div class="custom-button-container">
+                </div>        
+                <div id="button11" class="custom-button-container">
                         <div class="custom-button" onclick="toggleBox(11)">
                         <h5 class="custom-button-text">Stany przed- i pooperacyjne</h5>
                         <img class="custom-button-arrow" src="img/icon_arrow-down.svg" alt="Strzałka" width="20" height="20">
@@ -480,7 +466,7 @@
                         </div>
                         </div>
                 </div>
-                <div class="custom-button-container">
+                <div id="button12" class="custom-button-container">
                     <div class="custom-button" onclick="toggleBox(12)">
                     <h5 class="custom-button-text">Kardiologiczne</h5>
                     <img class="custom-button-arrow" src="img/icon_arrow-down.svg" alt="Strzałka" width="20" height="20">
@@ -498,7 +484,7 @@
                     </div>
                     </div>
                 </div>
-                <div class="custom-button-container">
+                <div id="button13" class="custom-button-container">
                     <div class="custom-button" onclick="toggleBox(13)">
                     <h5 class="custom-button-text">Urologiczne</h5>
                     <img class="custom-button-arrow" src="img/icon_arrow-down.svg" alt="Strzałka" width="20" height="20">
@@ -519,7 +505,7 @@
                     </div>
                     </div>
                 </div>
-                <div class="custom-button-container">
+                <div id="button14" class="custom-button-container">
                     <div class="custom-button" onclick="toggleBox(14)">
                     <h5 class="custom-button-text">Oczu</h5>
                     <img class="custom-button-arrow" src="img/icon_arrow-down.svg" alt="Strzałka" width="20" height="20">
@@ -541,7 +527,7 @@
             <a onclick="window.location.href = 'cennik.html'" target="_blank"><button type="button" class="reserve-button">Zarezerwuj wizytę</button></a>
     
         </section>
-
+        <!-- Przyciski -->
 
 
         <section class="section4" id="our-team">
@@ -560,6 +546,9 @@
                   </div>
                   <div class="team-member" onclick="showMember(2)">
                     <img src="img/worker3s.webp" alt="Patrycja Gorzkowska">
+                  </div>
+                  <div class="team-member" onclick="showMember(3)">
+                    <img src="img/worker4s.webp" alt="Patrycja Gorzkowska">
                   </div>
                   <div class="arrow arrow-right" onclick="nextMember()">
                     <img src="img/icon_arrow-right.svg" alt="">
@@ -590,16 +579,22 @@
                             <p>Stale poszerza swój warsztat pracy, biorąc udział w licznych szkoleniach zawodowych. Dodatkowo w swojej pracy oprócz fizjoterapii wdraża także elementy treningu medycznego. Pozwala to stworzyć spersonalizowany plan rehabilitacji, który wspomoże terapię w redukcji bóli i poprawie funkcji ruchowej.</p>
                             <p>Jej sympatyczne podejście sprawia, że pacjenci czują się komfortowo i chętnie uczestniczą w procesie rehabilitacji.</p>
                         </div>
-                  </div>
+                        <div id="member-desc-3" class="member-desc">
+                            <h3>Kinga Litwin</h3>
+                            <p class="member-desc-italics">Terapeutka blizn, specjalistka mikropunktury ScarINK</p>
+                            <p>Kinga jest zjoterapeutką, która specjalizuje się w terapii blizn korzystając z wielu technik - od terapii manualnej, terapii z wykorzystaniem narzędzi, igłoterapii przez zabiegi zykalne. Korzysta także z nowoczesnej i skutecznej metody mikropunktury ScarINK.</p>
+                            <p>Celem jej pracy jest nie tylko poprawa estetyki blizny, ale przede wszystkim wspieranie całego organizmu w regeneracji. W swojej pracy kieruje się holistycznym podejściem, dbając o to, by terapia była dostosowana do indywidualnych potrzeb pacjenta.</p>
+                            <p>Dzięki precyzyjnym i skutecznym technikom pomaga przywrócić elastyczność, funkcjonalność oraz równowagę w tkankach po urazach, operacjach, oparzeniach i innych zmianach skórnych, wpływając pozytywnie na samopoczucie.</p>
+                        </div>
+                    </div>
                 </div>
               </div>
             </div>
-          </section>
+        </section>
+        <!-- Zespół -->
           
 
-
-
-          <section class="section5" id="therapy-methods">
+        <section class="section5" id="therapy-methods">
             <h1 class="title1">Metody terapii</h1>
             <div class="icons">
                 <a href="terapia-wiscelarna.html">
@@ -682,7 +677,7 @@
                 </a>
             </div>
         </section>
-
+        <!-- Metody terapii -->
 
 
         <section class="section6">
@@ -693,6 +688,7 @@
                 </div>
             </div>
         </section>
+        <!-- W czym możemy Ci pomóc -->
 
 
 
@@ -716,6 +712,7 @@
                 </div>
               </div>
         </section>
+        <!-- Galeria -->
 
 
 
@@ -799,6 +796,7 @@
                 <div class="swiper-pagination"></div>
             </div>
         </section>
+        <!-- Rekomendacje -->
 
 
         <section class="section6 new-section">
@@ -809,6 +807,9 @@
                 </div>
             </div>
         </section>
+        <!-- Zapraszamy do  -->
+
+
         <footer class="footer">
             <div class="footer-container">
                 <div class="footer-top">
