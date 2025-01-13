@@ -46,33 +46,21 @@
 }
 
 
+
+
+
+
+
 .section1m {
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 96px auto;
-    gap: 20px;
+    margin: 50px 0px 100px;
     color: #022B2F;
+    gap: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-.section1m {
-    margin: 50px 10px 100px;
-}
-
 .section1m p {
     max-width: 580px;
     width: 100%;
@@ -85,16 +73,21 @@
     border-radius: 24px;
 }
 .section1m ul {
-    padding: 20px;
-    max-width: 550px;
+    max-width: 580px;
     width: 100%;
-    margin-left: 10px;
+    padding-left: 30px;
 }
-
 .section1m h2 {
-    font-size: 24px;
+    font-size: 19px;
     max-width: 580px;
     text-align: center;
+    margin-bottom: 10px;
+}
+.section1m span {
+    max-width: 580px;
+    width: 100%;
+    text-align: left;
+    display: block;
 }
 
 
