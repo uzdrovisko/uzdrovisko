@@ -1118,7 +1118,7 @@ body.open .navbar-menu1 {
   display: flex;
   background-image: url('../img/logo3.svg');
   background-repeat: no-repeat;
-  background-size: 17%;
+  background-size: 11%;
   background-position: calc(100% - 150px) center;
 }
 .content-box {
