@@ -52,22 +52,24 @@ h4 {
     gap: 64px;
     padding: 96px 20px;
 }
+.section1c > p {
+    max-width: 1150px;
+}
 .price-list {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 32px;
     color: black;
-    background-color: red;
 }
 .list {
+    max-width: 996px;
     width: 100%;
     height: 100%;
     background-color: #FFFFFF;
-    border-radius: 12px;
     padding: 32px;
-    background-color: greenyellow;
 }
 .list h4{
     margin-bottom: 24px;
