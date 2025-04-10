@@ -84,12 +84,12 @@
                     <nav class="navbar-menu">
                        <button type="button" class="activem" onclick="window.location.href = 'pierwsza-wizyta.html'">Pierwsza wizyta</button>
                         <button type="button" class="activem" onclick="window.location.href = 'index.html#our-team'">Zespół</button>
-<li class="dropdown">
+                        <li class="dropdown">
                             <button class="activem dropdown-toggle">Metody terapii</button>
                             <div class="dropdown-content">
                                 <button class="go-back-button"><span>←</span> Metody terapii</button>
                                 <div class="dropdown-content-inner">
-                                   <a href="terapia-wiscelarna.html">Terapia wisceralna</a>
+                                    <a href="terapia-wiscelarna.html">Terapia wisceralna</a>
                                     <a href="terapia-manualna.html">Terapia manualna</a>
                                     <a href="hirudoterapia.html">Hirudoterapia</a>
                                     <a href="terapia-blizn.html">Terapia blizn</a>
@@ -104,6 +104,14 @@
                                     <a href="terapia-narzedziowa.html">Terapia narzędziowa</a>
                                    <a href="elektrostymulacja-nb.html">Elektrostymulacja nerwu błędnego</a>
                                     <a href="scarink.html">Mikropunktura ScarINK</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <button class="activem dropdown-toggle">Oferta</button>
+                            <div class="dropdown-content">
+                                <button class="go-back-button"><span>←</span> Metody terapii</button>
+                                <div class="dropdown-content-inner">
                                   <a href="bol-stawow-poznan.html">Bóle stawów</a>
                                   <a href="bol-plecow-poznan.html">Ból pleców</a>
                                   <a href="bol-kregoslupa-poznan.html">Ból kręgosłupa</a>
@@ -127,7 +135,7 @@
                         <button type="button" class="activem" onclick="window.location.href = 'baza-wiedzy.html'">Baza wiedzy</button>
                         <button type="button" class="activem" onclick="window.location.href = 'cennik.html'">Cennik</button>
                         <button type="button" class="activem" onclick="window.location.href = 'kontakt.html'">Kontakt</button>
-                        <a onclick="window.location.href = 'cennik.html'" target="_blank"><button type="button" class="reserve-button">Zarezerwuj wizytę</button></a>
+                        <a href="https://rejestracja.medfile.pl/register/catalog/?uuid=0ee12bce-0daa-8ae7-fd6d-d7ef4409842a" target="_blank"><button type="button" class="reserve-button">Zarezerwuj wizytę</button></a>
                     </nav>
                 </nav>
             </div>
@@ -139,18 +147,21 @@
         
         
         <div class="navbar-container1">
-            <nav class="navbar1">
-                <div class="navbar-overlay1" onclick="toggleMenuOpen()"></div>
-                <button type="button" class="navbar-burger1" onclick="toggleMenuOpen()">
-                    <span class="material-icons">menu</span>
-                </button>
-                <a href="index.html">
-                    <img src="img/logo4.svg" class="logo">
-                </a>
-                <nav class="navbar-menu1">
-                    <button type="button" class="activem1" onclick="window.location.href = 'pierwsza-wizyta.html'">Pierwsza wizyta</button>
-                    <button type="button" class="activem1" onclick="window.location.href = 'index.html#our-team'">Zespół</button>
-                    <li class="dropdown">
+                <nav class="navbar1">
+                    <div class="navbar-overlay1" onclick="toggleMenuOpen()"></div>
+                    <button type="button" class="navbar-burger1" onclick="toggleMenuOpen()">
+                        <span class="material-icons">menu</span>
+                    </button>
+                    <a href="index.html">
+                        <img src="img/logo4.svg" class="logo">
+                    </a>
+                    <nav class="navbar-menu1">
+
+                        <button type="button" class="activem1" onclick="window.location.href = 'pierwsza-wizyta.html'">Pierwsza wizyta</button>
+
+                        <button type="button" class="activem1" onclick="scrollToSectionById('our-team')">Zespół</button>
+
+                        <li class="dropdown">
                             <button class="activem1 dropdown-toggle">Metody terapii</button>
                             <div class="dropdown-content">
                                 <button class="go-back-button"><span>←</span> Metody terapii</button>
@@ -170,6 +181,16 @@
                                     <a href="terapia-narzedziowa.html">Terapia narzędziowa</a>
                                    <a href="elektrostymulacja-nb.html">Elektrostymulacja nerwu błędnego</a>
                                     <a href="scarink.html">Mikropunktura ScarINK</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="dropdown">
+                            <button class="activem1 dropdown-toggle">Oferta</button>
+                            <div class="dropdown-content">
+                                <button class="go-back-button"><span>←</span> Metody terapii</button>
+                                <div class="dropdown-content-inner">
+                   
                                   <a href="bol-stawow-poznan.html">Bóle stawów</a>
                                   <a href="bol-plecow-poznan.html">Ból pleców</a>
                                   <a href="bol-kregoslupa-poznan.html">Ból kręgosłupa</a>
@@ -188,15 +209,22 @@
                                 </div>
                             </div>
                         </li>
-                    <button type="button" class="activem1" onclick="window.location.href = 'index.html#gallery-section'">Galeria</button>
-                    <button type="button" class="activem1" onclick="window.location.href = 'index.html#recommendations'">Rekomendacje</button>
-                    <button type="button" class="activem1" onclick="window.location.href = 'baza-wiedzy.html'">Baza wiedzy</button>
-                    <button type="button" class="activem1" onclick="window.location.href = 'cennik.html'">Cennik</button>
-                    <button type="button" class="activem1" onclick="window.location.href = 'kontakt.html'">Kontakt</button>
-                   <a onclick="window.location.href = 'cennik.html'" target="_blank"><button type="button" class="reserve-button">Zarezerwuj wizytę</button></a>
+
+                        <button type="button" class="activem1" onclick="scrollToSectionById('gallery-section')">Galeria</button>
+
+                        <button type="button" class="activem1" onclick="scrollToSectionById('recommendations')">Rekomendacje</button>
+
+                        <button type="button" class="activem1" onclick="window.location.href = 'baza-wiedzy.html'">Baza wiedzy</button>
+
+                        <button type="button" class="activem1" onclick="window.location.href = 'cennik.html'">Cennik</button>
+
+                        <button type="button" class="activem1" onclick="window.location.href = 'kontakt.html'">Kontakt</button>
+                        
+                        <a href="https://rejestracja.medfile.pl/register/catalog/?uuid=0ee12bce-0daa-8ae7-fd6d-d7ef4409842a" target="_blank"><button type="button" class="reserve-button">Zarezerwuj wizytę</button></a>
+                          
+                    </nav>
                 </nav>
-            </nav>
-        </div>
+            </div>
 
 
 
@@ -238,26 +266,34 @@
                 <div class="form-container">
                     <h1>Formularz kontaktowy</h1>
                     <form action="https://formspree.io/f/mzbldlaq" method="POST">
-                        <div class="form-group">
-                            <label for="name">Imię i Nazwisko</label>
-                            <input type="text" id="name" name="name" placeholder="Imię i Nazwisko" required>
-                          </div>
-                          
-                          <div class="form-group">
-                            <label for="email">Adres e-mail</label>
-                            <input type="email" id="email" name="email" placeholder="Adres e-mail" required>
-                          </div>
-                          
-                          <div class="form-group">
-                            <label for="message">Treść zapytania</label>
-                            <textarea id="message" name="message" placeholder="Treść zapytania" required></textarea>
-                        </div>
                       
+                      <div class="form-group">
+                        <label for="name">Imię i Nazwisko</label>
+                        <input type="text" id="name" name="name" placeholder="Imię i Nazwisko" required>
+                      </div>
+                      
+                      <div class="form-group">
+                        <label for="email">Adres e-mail</label>
+                        <input type="email" id="email" name="email" placeholder="Adres e-mail" required>
+                      </div>
+                      
+                      <div class="form-group">
+                        <label for="phone">Numer telefonu</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Numer telefonu" required>
+                      </div>
+                      
+                      <div class="form-group">
+                        <label for="message">Treść zapytania</label>
+                        <textarea id="message" name="message" placeholder="Treść zapytania" required></textarea>
+                      </div>
+                    
                       <div class="form-group">
                         <button type="submit">Wyślij zapytanie</button>
                       </div>
+                      
                     </form>
                   </div>
+                  
             </div>
         </section>
  <section class="section9" id="contact">
@@ -283,7 +319,7 @@ Skontaktuj się z nami, aby umówić się na indywidualną konsultację. Nie cze
             <div class="break">
                 <div class="content-box">
                     <h3>Zapraszamy do UZDROVISKO</h3>
-                    <a onclick="window.location.href = 'cennik.html'" target="_blank"><button type="button" class="reserve-button-t">Zarezerwuj wizytę</button></a>
+                    <a href="https://rejestracja.medfile.pl/register/catalog/?uuid=0ee12bce-0daa-8ae7-fd6d-d7ef4409842a" target="_blank"><button type="button" class="reserve-button-t">Zarezerwuj wizytę</button></a>
                 </div>
             </div>
         </section>
